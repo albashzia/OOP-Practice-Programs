@@ -16,7 +16,10 @@ class Pen
 }
 public class ClassAndObjects {
     public static void main(String[] args) {
-    
+        Pen p1 = new Pen();
+        Pen p2 = new Pen();
+        Pen p3 = new Pen();
+        
     }
     
 }
