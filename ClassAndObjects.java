@@ -27,7 +27,21 @@ public class ClassAndObjects {
         p1.type = "gel";
         p2.type = "ballpoint";
         p3.type = "pointer";
+
+        System.out.println(p1.color);
+        p1.printColor();
+        System.out.println(p1.type);
+        p1.printType();
         
+        System.out.println(p2.color);
+        p2.printColor();
+        System.out.println(p2.type);
+        p2.printType();
+        
+        System.out.println(p3.color);
+        p3.printColor();
+        System.out.println(p3.type);
+        p3.printType();
     }
     
 }
