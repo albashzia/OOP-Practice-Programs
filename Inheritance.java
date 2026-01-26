@@ -3,16 +3,18 @@ class Shape{
 }
 
 class Rectangle extends Shape{
-    static void area(int l, int w)
+    static double area(int l, int w)
     {
-
+        double areaRect = l * w;
+        return areaRect;
     }
 }
 
 class Triangle extends Shape{
-    static void area(int base, int height)
+    static double area(int base, int height)
     {
-
+        double areaTri = (0.5)*base*height;
+        return areaTri;
     }
 }
 
