@@ -27,5 +27,11 @@ public class Constructors {
         Students s1 = new Students();
         Students s2 = new Students(1001, "Ali", 3.4);
         Students s3 = new Students(1002, "Ehsan");
+
+        System.out.println("Details of Object s2");
+        System.out.println(s2.rollNo);
+        System.out.println(s2.name);
+        System.out.println(s2.cgpa);
+
     }
 }
