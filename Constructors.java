@@ -14,6 +14,13 @@ class Students{
         name = n;
         cgpa = c;
     }
+
+    Students(int rollNo, String name)
+    {
+        this.rollNo = rollNo;
+        this.name = name;
+
+    }
 }
 public class Constructors {
     public static void main(String[] args) {
