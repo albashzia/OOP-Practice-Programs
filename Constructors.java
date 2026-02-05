@@ -31,6 +31,10 @@ public class Constructors {
         s1.rollNo = 1000;
         s1.name = "Amir";
         s1.cgpa = 3.2;
+        System.out.println(s1.rollNo);
+        System.out.println(s1.name);
+        System.out.println(s1.cgpa);
+        System.out.println();
         System.out.println("Details of Object s2");
         System.out.println(s2.rollNo);
         System.out.println(s2.name);
