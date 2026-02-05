@@ -26,5 +26,6 @@ public class Constructors {
     public static void main(String[] args) {
         Students s1 = new Students();
         Students s2 = new Students(1001, "Ali", 3.4);
+        Students s3 = new Students(1002, "Ehsan");
     }
 }
