@@ -32,6 +32,9 @@ public class Constructors {
         System.out.println(s2.rollNo);
         System.out.println(s2.name);
         System.out.println(s2.cgpa);
-
+        System.out.println();
+        System.out.println("Details of object s3");
+        System.out.println(s3.rollNo);
+        System.out.println(s3.name);
     }
 }
