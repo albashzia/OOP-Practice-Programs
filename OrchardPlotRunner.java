@@ -25,6 +25,18 @@ class OrchardPlot{
     public double calculateRevenue() {
         return calculateTotalYield() * marketPricePerKg;
     }
+
+    public void checkPlantDensity() {
+
+        double treesPerKanal = totalTrees / landAreaKanal;
+
+        if(treesPerKanal > 100)
+            System.out.println("Orchard is overcrowded.");
+        else if(treesPerKanal >= 50)
+            System.out.println("Plant density is optimal.");
+        else
+            System.out.println("Land is underutilized.");
+    }
 }
 
 public class OrchardPlotRunner {
