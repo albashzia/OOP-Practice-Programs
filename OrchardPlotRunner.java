@@ -42,6 +42,16 @@ class OrchardPlot{
         return totalTrees * 50;
     }
 
+    public void displayOrchard() {
+
+        System.out.println("Fruit Type: " + fruitType);
+        System.out.println("Land Area: " + landAreaKanal + " kanal");
+        System.out.println("Total Trees: " + totalTrees);
+        System.out.println("Spacing: " + treeSpacingFeet + " feet");
+        System.out.println("Estimated Yield: " + calculateTotalYield() + " kg");
+        System.out.println("Estimated Revenue: Rs " + calculateRevenue());
+    }
+
 }
 
 public class OrchardPlotRunner {
