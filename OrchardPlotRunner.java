@@ -6,7 +6,17 @@ class OrchardPlot{
     private double averageYieldPerTreeKg;
     private double marketPricePerKg;
 
-
+    public OrchardPlot(String fruitType, double landAreaKanal,
+                       double treeSpacingFeet, int totalTrees,
+                       double averageYieldPerTreeKg, double marketPricePerKg)
+    {
+        this.fruitType = fruitType;
+        this.landAreaKanal = landAreaKanal;
+        this.treeSpacingFeet = treeSpacingFeet;
+        this.totalTrees = totalTrees;
+        this.averageYieldPerTreeKg = averageYieldPerTreeKg;
+        this.marketPricePerKg = marketPricePerKg;
+    }
 }
 
 public class OrchardPlotRunner {
