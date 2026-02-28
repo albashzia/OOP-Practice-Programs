@@ -22,6 +22,9 @@ class OrchardPlot{
         return totalTrees * averageYieldPerTreeKg;
     }
 
+    public double calculateRevenue() {
+        return calculateTotalYield() * marketPricePerKg;
+    }
 }
 
 public class OrchardPlotRunner {
