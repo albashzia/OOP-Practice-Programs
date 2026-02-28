@@ -17,6 +17,11 @@ class OrchardPlot{
         this.averageYieldPerTreeKg = averageYieldPerTreeKg;
         this.marketPricePerKg = marketPricePerKg;
     }
+
+    public double calculateTotalYield() {
+        return totalTrees * averageYieldPerTreeKg;
+    }
+
 }
 
 public class OrchardPlotRunner {
