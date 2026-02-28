@@ -1,4 +1,11 @@
 class OrchardPlot{
+    private String fruitType;
+    private double landAreaKanal;
+    private double treeSpacingFeet;
+    private int totalTrees;
+    private double averageYieldPerTreeKg;
+    private double marketPricePerKg;
+
 
 }
 
