@@ -57,5 +57,14 @@ class OrchardPlot{
 public class OrchardPlotRunner {
     public static void main(String args[]){
 
+        OrchardPlot plot1 = new OrchardPlot(
+                "Mango",
+                1.5,
+                25,
+                60,
+                80,
+                200
+        );
+
     }
 }
