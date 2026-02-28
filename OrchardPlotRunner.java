@@ -69,5 +69,15 @@ public class OrchardPlotRunner {
         plot1.displayOrchard();
         System.out.println();
 
+        double yield = plot1.calculateTotalYield();
+        System.out.println("Total Yield: " + yield + " kg");
+
+        double revenue = plot1.calculateRevenue();
+        System.out.println("Estimated Revenue: Rs " + revenue);
+
+        plot1.checkPlantDensity();
+
+        double water = plot1.dailyWaterRequirement();
+        System.out.println("Daily Water Requirement: " + water + " liters");
     }
 }
