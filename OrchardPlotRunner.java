@@ -37,6 +37,11 @@ class OrchardPlot{
         else
             System.out.println("Land is underutilized.");
     }
+
+    public double dailyWaterRequirement() {
+        return totalTrees * 50;
+    }
+
 }
 
 public class OrchardPlotRunner {
