@@ -66,5 +66,8 @@ public class OrchardPlotRunner {
                 200
         );
 
+        plot1.displayOrchard();
+        System.out.println();
+
     }
 }
