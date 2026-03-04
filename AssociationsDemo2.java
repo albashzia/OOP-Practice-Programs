@@ -80,5 +80,35 @@ class Person1 {
     }
 }
 
+class Book1 {
+    private String bookName;
+    private String publisher;
+    private Person1 author;
+
+    public Book1(String bookName, String publisher, Person1 author) {
+        this.bookName = bookName;
+        this.publisher = publisher;
+        this.author = author;
+    }
+
+    public String getBookName() {
+        return bookName;
+    }
+
+    public String getPublisher() {
+        return publisher;
+    }
+
+    public Person1 getAuthor() {
+        return author;
+    }
+
+    public void display() {
+        System.out.println("Book Name: " + bookName);
+        System.out.println("Publisher: " + publisher);
+        author.display();
+    }
+}
+
 public class AssociationsDemo2 {
 }
