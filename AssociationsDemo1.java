@@ -51,5 +51,46 @@ class Address {
     }
 }
 
+class Person {
+    private String name;
+    private int age;
+    private Address a;
+
+    public Person(String name, int age, Address a) {
+        this.name = name;
+        this.age = age;
+        this.a = a;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public Address getAddress() {
+        return a;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setAddress(Address a) {
+        this.a = a;
+    }
+
+    public void display() {
+        System.out.println("Name: " + name + ", Age: " + age);
+        a.display();
+    }
+}
+
 public class AssociationsDemo1 {
 }
