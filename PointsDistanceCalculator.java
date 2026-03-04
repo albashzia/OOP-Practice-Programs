@@ -71,4 +71,17 @@ class Line {
 }
 
 public class PointsDistanceCalculator {
+    public static void main(String[] args) {
+
+        Point1 p1 = new Point1(0, 0);
+        Point1 p2 = new Point1(3, 4);
+        Line line1 = new Line(p1, p2);
+
+        Point1 p3 = new Point1(1, 1);
+        Point1 p4 = new Point1(4, 5);
+        Line line2 = new Line(p3, p4);
+
+        line1.display();
+        line2.display();
+    }
 }
