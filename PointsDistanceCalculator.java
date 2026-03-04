@@ -29,6 +29,46 @@ class Point1 {
     }
 }
 
+class Line {
+
+    private Point1 startPoint;
+    private Point1 endPoint;
+
+    public Line(Point1 startPoint, Point1 endPoint) {
+        this.startPoint = startPoint;
+        this.endPoint = endPoint;
+    }
+
+    public Point1 getStartPoint() {
+        return startPoint;
+    }
+
+    public Point1 getEndPoint() {
+        return endPoint;
+    }
+
+    public void setStartPoint(Point1 startPoint) {
+        this.startPoint = startPoint;
+    }
+
+    public void setEndPoint(Point1 endPoint) {
+        this.endPoint = endPoint;
+    }
+
+    public double length() {
+        double dx = endPoint.getX() - startPoint.getX();
+        double dy = endPoint.getY() - startPoint.getY();
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    public void display() {
+        System.out.print("Line from ");
+        startPoint.display();
+        System.out.print(" to ");
+        endPoint.display();
+        System.out.println(" has length: " + length());
+    }
+}
 
 public class PointsDistanceCalculator {
 }
