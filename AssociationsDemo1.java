@@ -93,4 +93,12 @@ class Person {
 }
 
 public class AssociationsDemo1 {
+    public static void main(String[] args) {
+
+        Address addr = new Address(12, 45, "Haripur", 22620);
+
+        Person p1 = new Person("Ali", 22, addr);
+
+        p1.display();
+    }
 }
