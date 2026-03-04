@@ -111,4 +111,19 @@ class Book1 {
 }
 
 public class AssociationsDemo2 {
+    public static void main(String[] args) {
+        Address1 addr = new Address1(10, 25, "Karachi", 75000);
+
+        Person1 author = new Person1("Ahmed", 35, addr);
+
+        Book1 b1 = new Book1("Java Basics", "Penguin House", author);
+
+        b1.display();
+
+        author.getAddress().setCity("Lahore");
+        author.getAddress().setStreetNo(20);
+
+        System.out.println("");
+        b1.display();
+    }
 }
