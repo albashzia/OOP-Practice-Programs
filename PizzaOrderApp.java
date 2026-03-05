@@ -12,6 +12,22 @@ class Pizza{
         this.hamToppings = hamToppings;
     }
 
+    public String getSize() {
+        return size;
+    }
+
+    public int getCheeseToppings() {
+        return cheeseToppings;
+    }
+
+    public int getPepperoniToppings() {
+        return pepperoniToppings;
+    }
+
+    public int getHamToppings() {
+        return hamToppings;
+    }
+
 }
 
 class PizzaOrder{
