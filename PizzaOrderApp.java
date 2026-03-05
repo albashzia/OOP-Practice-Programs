@@ -104,6 +104,14 @@ class PizzaOrder{
         }
         return total;
     }
+
+    public void displayOrder() {
+        for (int i = 0; i < pizzaCount; i++)
+        {
+            System.out.println("Pizza " + (i+1) + ": " + pizzas[i].getDescription());
+        }
+        System.out.println("Total Order Cost: $" + calcTotal());
+    }
 }
 
 public class PizzaOrderApp {
