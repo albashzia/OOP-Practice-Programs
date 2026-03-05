@@ -83,6 +83,17 @@ class PizzaOrder{
         pizzaCount = 0;
     }
 
+    public void addPizza(Pizza p) {
+        if (pizzaCount < 3)
+        {
+            pizzas[pizzaCount] = p;
+            pizzaCount++;
+        }
+        else
+        {
+            System.out.println("Order full! Cannot add more pizzas.");
+        }
+    }
 }
 
 public class PizzaOrderApp {
