@@ -94,6 +94,16 @@ class PizzaOrder{
             System.out.println("Order full! Cannot add more pizzas.");
         }
     }
+
+    public double calcTotal()
+    {
+        double total = 0;
+        for (int i = 0; i < pizzaCount; i++)
+        {
+            total = total + pizzas[i].calcCost();
+        }
+        return total;
+    }
 }
 
 public class PizzaOrderApp {
