@@ -115,4 +115,15 @@ class PizzaOrder{
 }
 
 public class PizzaOrderApp {
+    public static void main(String[] args) {
+
+        Pizza pizza1 = new Pizza("large", 1, 1, 2);
+        Pizza pizza2 = new Pizza("medium", 2, 0, 1);
+
+        PizzaOrder order = new PizzaOrder();
+        order.addPizza(pizza1);
+        order.addPizza(pizza2);
+
+        order.displayOrder();
+    }
 }
