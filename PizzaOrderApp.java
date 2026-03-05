@@ -28,6 +28,21 @@ class Pizza{
         return hamToppings;
     }
 
+    public void setSize(String size) {
+        this.size = size.toLowerCase();
+    }
+
+    public void setCheeseToppings(int cheeseToppings) {
+        this.cheeseToppings = cheeseToppings;
+    }
+
+    public void setPepperoniToppings(int pepperoniToppings) {
+        this.pepperoniToppings = pepperoniToppings;
+    }
+
+    public void setHamToppings(int hamToppings) {
+        this.hamToppings = hamToppings;
+    }
 }
 
 class PizzaOrder{
