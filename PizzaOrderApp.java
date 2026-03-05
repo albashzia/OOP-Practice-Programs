@@ -75,6 +75,9 @@ class Pizza{
 
 class PizzaOrder{
 
+    private Pizza[] pizzas;
+    private int pizzaCount;
+
 }
 
 public class PizzaOrderApp {
