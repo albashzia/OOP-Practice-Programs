@@ -43,6 +43,26 @@ class Pizza{
     public void setHamToppings(int hamToppings) {
         this.hamToppings = hamToppings;
     }
+
+    public double calcCost() {
+        int baseCost = 0;
+        switch(size) {
+            case "small":
+                baseCost = 10;
+                break;
+            case "medium":
+                baseCost = 12;
+                break;
+            case "large":
+                baseCost = 14;
+                break;
+            default:
+                baseCost = 10;
+        }
+
+        int totalToppings = cheeseToppings + pepperoniToppings + hamToppings;
+        return baseCost + 2 * totalToppings;
+    }
 }
 
 class PizzaOrder{
