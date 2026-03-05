@@ -63,6 +63,14 @@ class Pizza{
         int totalToppings = cheeseToppings + pepperoniToppings + hamToppings;
         return baseCost + 2 * totalToppings;
     }
+
+    public String getDescription() {
+        return "Size: " + size +
+                ", Cheese: " + cheeseToppings +
+                ", Pepperoni: " + pepperoniToppings +
+                ", Ham: " + hamToppings +
+                ", Cost: $" + calcCost();
+    }
 }
 
 class PizzaOrder{
