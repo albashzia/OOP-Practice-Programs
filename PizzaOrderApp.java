@@ -78,6 +78,11 @@ class PizzaOrder{
     private Pizza[] pizzas;
     private int pizzaCount;
 
+    public PizzaOrder() {
+        pizzas = new Pizza[3];
+        pizzaCount = 0;
+    }
+
 }
 
 public class PizzaOrderApp {
