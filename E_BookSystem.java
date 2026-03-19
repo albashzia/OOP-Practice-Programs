@@ -20,6 +20,18 @@ class Book2{
         this.price = price;
     }
 
+    String getTitle(){
+        return title;
+    }
+
+    String getAuthor(){
+        return author;
+    }
+
+    double getPrice(){
+        return price;
+    }
+
 }
 
 public class E_BookSystem {
