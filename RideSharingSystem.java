@@ -34,6 +34,19 @@ class Driver extends User{
     private String vehicleType;
     private int licenseNumber;
     private double rating;
+
+    Driver(){
+        vehicleType = "Undefined";
+        licenseNumber = 0000;
+        rating = 0.0;
+    }
+
+    Driver(int id, String name, String phoneNumber,String vehicleType,int licenseNumber,double rating){
+        super(id, name, phoneNumber);
+        this.vehicleType = vehicleType;
+        this.licenseNumber = licenseNumber;
+        this.rating=rating;
+    }
 }
 
 class Passenger extends User{
