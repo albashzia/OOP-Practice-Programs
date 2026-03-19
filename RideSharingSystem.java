@@ -12,5 +12,11 @@ class User{
     private String name;
     private String phoneNumber;
 }
+
+class Driver extends User{
+    private String vehicleType;
+    private int licenseNumber;
+    private double rating;
+}
 public class RideSharingSystem {
 }
