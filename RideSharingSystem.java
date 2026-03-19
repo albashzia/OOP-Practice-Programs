@@ -18,5 +18,11 @@ class Driver extends User{
     private int licenseNumber;
     private double rating;
 }
+
+class Passenger extends User{
+    private String pickupLocation;
+    private String destination;
+}
+
 public class RideSharingSystem {
 }
