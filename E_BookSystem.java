@@ -39,5 +39,16 @@ class Book2{
     }
 }
 
+class Ebook extends Book2{
+    private String fileSize;
+    private String format;
+
+    Ebook(String title,String author,double price,String fileSize,String format){
+        super(title,author,price);
+        this.fileSize = fileSize;
+        this.format = format;
+    }
+
+}
 public class E_BookSystem {
 }
