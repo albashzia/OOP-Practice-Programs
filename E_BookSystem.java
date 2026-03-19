@@ -49,6 +49,13 @@ class Ebook extends Book2{
         this.format = format;
     }
 
+    String getFileSize(){
+        return fileSize;
+    }
+
+    String getFormat(){
+        return format;
+    }
 }
 public class E_BookSystem {
 }
