@@ -32,6 +32,11 @@ class Book2{
         return price;
     }
 
+    void display(){
+        System.out.println("Book Name : "+getTitle());
+        System.out.println("Author Name : "+getAuthor());
+        System.out.println("Price : "+getPrice());
+    }
 }
 
 public class E_BookSystem {
