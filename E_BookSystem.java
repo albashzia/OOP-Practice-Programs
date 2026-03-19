@@ -76,7 +76,18 @@ class Ebook extends Book2{
 }
 public class E_BookSystem {
     public static void main(String[] args){
+        System.out.println("-----------------------------------");
+        Book2 b1 = new Book2();
+        b1.display();
+        System.out.println("-----------------------------------");
         Ebook eB1 = new Ebook();
         eB1.display();
+        System.out.println("-----------------------------------");
+        Book2 b2 = new Book2("Programming Basics", "Dietel and Dietel",60.99);
+        b2.display();
+        System.out.println("-----------------------------------");
+        Ebook eB2 = new Ebook(b2.getTitle(), b2.getAuthor(),b2.getPrice(),"12 MB","PDF");
+        eB2.display();
+        System.out.println("-----------------------------------");
     }
 }
