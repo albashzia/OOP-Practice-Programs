@@ -75,4 +75,8 @@ class Ebook extends Book2{
     }
 }
 public class E_BookSystem {
+    public static void main(String[] args){
+        Ebook eB1 = new Ebook();
+        eB1.display();
+    }
 }
