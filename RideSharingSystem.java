@@ -16,6 +16,18 @@ class User{
     private int id;
     private String name;
     private String phoneNumber;
+    User(){
+        id = 0;
+        name = "Null";
+        phoneNumber = "000000000";
+    }
+
+    User(int id, String name, String phoneNumber){
+        this.id = id;
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+    }
+
 }
 
 class Driver extends User{
