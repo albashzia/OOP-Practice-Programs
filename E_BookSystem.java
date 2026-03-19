@@ -1,31 +1,25 @@
-/*
-E-Book System
-A publishing company wants to manage different types of books in its catalog.
-All books share basic information such as title, author, and price,
-but some books are digital and include extra details like file size and format (PDF, EPUB, etc.).
-Design a program in Java where a general Book class stores the common attributes,
-while an EBook class extends it with its own specific properties.
-Both types should allow creating objects with default
-values or with complete information, and the system should provide a way to display all
-relevant details for each book.
-*/
+//Creating Book class - Parent Class
 class Book2{
+    //defining attributes
     private String title;
     private String author;
     private double price;
 
+    //default constructor
     Book2(){
         title = "Undefined";
         author = "Unknown";
         price = 0.00;
     }
 
+    //parameterized constructor
     Book2(String title, String author, double price){
         this.title = title;
         this.author = author;
         this.price = price;
     }
 
+    //Getter Methods
     String getTitle(){
         return title;
     }
@@ -38,6 +32,7 @@ class Book2{
         return price;
     }
 
+    // display method
     void display(){
         System.out.println("Book Name : "+getTitle());
         System.out.println("Author Name : "+getAuthor());
@@ -45,21 +40,26 @@ class Book2{
     }
 }
 
+// EBook class inherits Book2 class
 class Ebook extends Book2{
+    //defining attributes
     private String fileSize;
     private String format;
 
+    //default constructor
     Ebook(){
         fileSize = "0 MB";
         format = "Not specified";
     }
 
+    //parameterized constructor
     Ebook(String title,String author,double price,String fileSize,String format){
         super(title,author,price);
         this.fileSize = fileSize;
         this.format = format;
     }
 
+    //getter methods
     String getFileSize(){
         return fileSize;
     }
@@ -68,24 +68,31 @@ class Ebook extends Book2{
         return format;
     }
 
+    //display method
     void display(){
-        super.display();
+        super.display(); // calls display method of parent class
         System.out.println("File Size : "+getFileSize());
         System.out.println("Format : "+getFormat());
     }
 }
+// Main class
 public class E_BookSystem {
     public static void main(String[] args){
+
         System.out.println("-----------------------------------");
-        Book2 b1 = new Book2();
+        Book2 b1 = new Book2(); // creating Book object using default constructor
         b1.display();
         System.out.println("-----------------------------------");
-        Ebook eB1 = new Ebook();
+        Ebook eB1 = new Ebook(); // creating Ebook object using default constructor
         eB1.display();
         System.out.println("-----------------------------------");
+
+        // creating Book object using parameterized constructor
         Book2 b2 = new Book2("Programming Basics", "Dietel and Dietel",60.99);
         b2.display();
         System.out.println("-----------------------------------");
+
+        // creating Ebook object using parameterized constructor
         Ebook eB2 = new Ebook(b2.getTitle(), b2.getAuthor(),b2.getPrice(),"12 MB","PDF");
         eB2.display();
         System.out.println("-----------------------------------");
