@@ -6,6 +6,11 @@ different roles and information depending on whether they are a driver or a pass
 Drivers store details such as vehicle type, license number, and rating,
 while passengers provide their pickup location and destination. The system tracks
 rides by combining driver and passenger information, calculates fares based on
+distance and vehicle type, and displays relevant details for each participant.
+The application can also show customized information for drivers and passengers,
+ ensuring that each type of user sees the data relevant to their role.
+ Design and implement this system in Java, making use of a
+common user structure while allowing specialized behavior for drivers and passengers.
 */
 class User{
     private int id;
