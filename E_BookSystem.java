@@ -9,6 +9,11 @@ Both types should allow creating objects with default
 values or with complete information, and the system should provide a way to display all
 relevant details for each book.
 */
+class Book2{
+    private String title;
+    private String author;
+    private double price;
+}
 
 public class E_BookSystem {
 }
