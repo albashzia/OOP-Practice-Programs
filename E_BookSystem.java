@@ -14,6 +14,12 @@ class Book2{
     private String author;
     private double price;
 
+    Book2(){
+        title = "Undefined";
+        author = "Unknown";
+        price = 0.00;
+    }
+
     Book2(String title, String author, double price){
         this.title = title;
         this.author = author;
@@ -42,6 +48,11 @@ class Book2{
 class Ebook extends Book2{
     private String fileSize;
     private String format;
+
+    Ebook(){
+        fileSize = "0 MB";
+        format = "Not specified";
+    }
 
     Ebook(String title,String author,double price,String fileSize,String format){
         super(title,author,price);
