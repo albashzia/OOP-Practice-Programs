@@ -13,6 +13,13 @@ class Book2{
     private String title;
     private String author;
     private double price;
+
+    Book2(String title, String author, double price){
+        this.title = title;
+        this.author = author;
+        this.price = price;
+    }
+
 }
 
 public class E_BookSystem {
