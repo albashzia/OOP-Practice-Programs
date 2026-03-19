@@ -52,6 +52,17 @@ class Driver extends User{
 class Passenger extends User{
     private String pickupLocation;
     private String destination;
+
+    Passenger(){
+        pickupLocation = "Not specified";
+        destination = "Not specified";
+    }
+
+    Passenger(int id,String name, String phoneNumber, String pickupLocation, String destination){
+        super(id, name, phoneNumber);
+        this.pickupLocation = pickupLocation;
+        this.destination = destination;
+    }
 }
 
 public class RideSharingSystem {
