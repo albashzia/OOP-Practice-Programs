@@ -63,6 +63,16 @@ class Driver extends User{
         this.rating=rating;
     }
 
+    String getVehicleType(){
+        return vehicleType;
+    }
+    int getLicenseNumber(){
+        return licenseNumber;
+    }
+    double getRating(){
+        return rating;
+    }
+
     double calculateFare(double distance){
         if(vehicleType.equalsIgnoreCase("Car")){
             return distance * 10;
