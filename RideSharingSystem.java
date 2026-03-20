@@ -37,6 +37,12 @@ class User{
     String getPhoneNumber(){
         return phoneNumber;
     }
+
+    void display(){
+        System.out.println("User Id : "+getId());
+        System.out.println("Name : "+getName());
+        System.out.println("Phone Number : "+getPhoneNumber());
+    }
 }
 
 class Driver extends User{
