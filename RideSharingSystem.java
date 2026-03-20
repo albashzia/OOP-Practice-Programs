@@ -85,6 +85,7 @@ class Driver extends User{
 
     void display(){
         super.display();
+        System.out.println("User Status : Driver");
         System.out.println("Vehicle Type : "+getVehicleType());
         System.out.println("License Number : "+getLicenseNumber());
         System.out.println("Rating : "+getRating());
@@ -104,6 +105,14 @@ class Passenger extends User{
         super(id, name, phoneNumber);
         this.pickupLocation = pickupLocation;
         this.destination = destination;
+    }
+
+    String getPickupLocation(){
+        return pickupLocation;
+    }
+
+    String getDestination(){
+        return destination;
     }
 }
 
