@@ -47,6 +47,16 @@ class Driver extends User{
         this.licenseNumber = licenseNumber;
         this.rating=rating;
     }
+
+    double calculateFare(double distance){
+        if(vehicleType.equalsIgnoreCase("Car")){
+            return distance * 10;
+        }
+        if (vehicleType.equalsIgnoreCase("Bike")){
+            return distance * 5;
+        }
+        return 0;
+    }
 }
 
 class Passenger extends User{
