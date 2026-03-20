@@ -28,6 +28,15 @@ class User{
         this.phoneNumber = phoneNumber;
     }
 
+    int getId(){
+        return id;
+    }
+    String getName(){
+        return name;
+    }
+    String getPhoneNumber(){
+        return phoneNumber;
+    }
 }
 
 class Driver extends User{
