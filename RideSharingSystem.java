@@ -82,6 +82,13 @@ class Driver extends User{
         }
         return 0;
     }
+
+    void display(){
+        super.display();
+        System.out.println("Vehicle Type : "+getVehicleType());
+        System.out.println("License Number : "+getLicenseNumber());
+        System.out.println("Rating : "+getRating());
+    }
 }
 
 class Passenger extends User{
