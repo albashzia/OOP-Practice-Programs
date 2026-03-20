@@ -114,6 +114,13 @@ class Passenger extends User{
     String getDestination(){
         return destination;
     }
+
+    void display(){
+        super.display();
+        System.out.println("User Status : Passenger");
+        System.out.println("Pickup Location : "+getPickupLocation());
+        System.out.println("Destination : "+getDestination());
+    }
 }
 
 public class RideSharingSystem {
