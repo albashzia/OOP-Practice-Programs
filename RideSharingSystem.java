@@ -123,5 +123,14 @@ class Passenger extends User{
     }
 }
 
+class Ride{
+    private int rideId;
+    private Driver driver;
+    private Passenger passenger;
+    private double distance;
+    private double fare;
+
+}
+
 public class RideSharingSystem {
 }
