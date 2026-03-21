@@ -130,6 +130,13 @@ class Ride{
     private double distance;
     private double fare;
 
+    Ride(int rideId, Driver driver, Passenger passenger, double distance){
+        this.rideId = rideId;
+        this.driver = driver;
+        this.passenger = passenger;
+        this.distance = distance;
+        this.fare = driver.calculateFare(distance);
+    }
 }
 
 public class RideSharingSystem {
