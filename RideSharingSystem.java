@@ -168,4 +168,11 @@ class Ride{
 }
 
 public class RideSharingSystem {
+    public static void main() {
+        Driver driver = new Driver(100,"Ali","03001234567","Car",1234,4.5);
+        Passenger passenger = new Passenger(001,"Umar","0995123456","E-11","H-12");
+
+        Ride ride = new Ride(0011,driver,passenger,32);
+        ride.displayRideDetails();
+    }
 }
