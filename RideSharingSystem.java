@@ -1,32 +1,24 @@
-/*
-Ride Sharing System
-A transportation company develops a ride-sharing system to connect passengers
-with drivers in real time. Each user in the system follows a common structure but has
-different roles and information depending on whether they are a driver or a passenger.
-Drivers store details such as vehicle type, license number, and rating,
-while passengers provide their pickup location and destination. The system tracks
-rides by combining driver and passenger information, calculates fares based on
-distance and vehicle type, and displays relevant details for each participant.
-The application can also show customized information for drivers and passengers,
- ensuring that each type of user sees the data relevant to their role.
- Design and implement this system in Java, making use of a
-common user structure while allowing specialized behavior for drivers and passengers.
-*/
+//Creating User Class - Parent Class
 class User{
+
+    //Attributes
     private int id;
     private String name;
     private String phoneNumber;
+    //Non-Parameterized Constructor
     User(){
         id = 0;
         name = "Null";
         phoneNumber = "000000000";
     }
-
+    //Parameterized Constructor
     User(int id, String name, String phoneNumber){
         this.id = id;
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
+
+    //Getter Methods
 
     int getId(){
         return id;
@@ -37,31 +29,35 @@ class User{
     String getPhoneNumber(){
         return phoneNumber;
     }
-
+    //Display Method
     void display(){
         System.out.println("User Id : "+getId());
         System.out.println("Name : "+getName());
         System.out.println("Phone Number : "+getPhoneNumber());
     }
 }
-
+// Creating Driver Class, inherits from User Class - Child Class
 class Driver extends User{
+
+    //Attributes
     private String vehicleType;
     private int licenseNumber;
     private double rating;
-
+    //Non-Parameterized Constructor
     Driver(){
         vehicleType = "Undefined";
         licenseNumber = 0000;
         rating = 0.0;
     }
-
+    //Parameterized Constructor
     Driver(int id, String name, String phoneNumber,String vehicleType,int licenseNumber,double rating){
         super(id, name, phoneNumber);
         this.vehicleType = vehicleType;
         this.licenseNumber = licenseNumber;
         this.rating=rating;
     }
+
+    //Getter Methods
 
     String getVehicleType(){
         return vehicleType;
@@ -72,7 +68,7 @@ class Driver extends User{
     double getRating(){
         return rating;
     }
-
+    // method to calculate fare
     double calculateFare(double distance){
         if(vehicleType.equalsIgnoreCase("Car")){
             return distance * 10;
@@ -82,7 +78,7 @@ class Driver extends User{
         }
         return 0;
     }
-
+    //display method
     void display(){
         super.display();
         System.out.println("User Status : Driver");
@@ -91,21 +87,25 @@ class Driver extends User{
         System.out.println("Rating : "+getRating());
     }
 }
-
+// Creating Passenger Class, inherits from User Class - Child Class
 class Passenger extends User{
+
+    //Attributes
     private String pickupLocation;
     private String destination;
-
+    //Non-Parameterized Constructor
     Passenger(){
         pickupLocation = "Not specified";
         destination = "Not specified";
     }
-
+    //Parameterized Constructor
     Passenger(int id,String name, String phoneNumber, String pickupLocation, String destination){
         super(id, name, phoneNumber);
         this.pickupLocation = pickupLocation;
         this.destination = destination;
     }
+
+    //Getter Methods
 
     String getPickupLocation(){
         return pickupLocation;
@@ -114,7 +114,7 @@ class Passenger extends User{
     String getDestination(){
         return destination;
     }
-
+    //display method
     void display(){
         super.display();
         System.out.println("User Status : Passenger");
@@ -123,13 +123,16 @@ class Passenger extends User{
     }
 }
 
+// Creating Ride class to handle the system
 class Ride{
+    //Attributes
     private int rideId;
     private Driver driver;
     private Passenger passenger;
     private double distance;
     private double fare;
 
+    //Parameterized Constructor
     Ride(int rideId, Driver driver, Passenger passenger, double distance){
         this.rideId = rideId;
         this.driver = driver;
@@ -137,6 +140,8 @@ class Ride{
         this.distance = distance;
         this.fare = driver.calculateFare(distance);
     }
+
+    //Getter Methods
 
     int getRideId(){
         return rideId;
@@ -150,6 +155,7 @@ class Ride{
         return fare;
     }
 
+    // Display method
     void displayRideDetails(){
         System.out.println("------------------------------------");
         System.out.println("Ride Details\n");
@@ -167,12 +173,17 @@ class Ride{
     }
 }
 
+// Main class to run the system
 public class RideSharingSystem {
+    //main method
     public static void main() {
+        //Creating object of Driver class
         Driver driver = new Driver(100,"Ali","03001234567","Car",1234,4.5);
+        //Creating object of Passenger class
         Passenger passenger = new Passenger(001,"Umar","0995123456","E-11","H-12");
 
-        Ride ride = new Ride(0011,driver,passenger,32);
-        ride.displayRideDetails();
+        //Creating object of Ride class
+        Ride ride = new Ride(11,driver,passenger,32);
+        ride.displayRideDetails();//calling display method
     }
 }
