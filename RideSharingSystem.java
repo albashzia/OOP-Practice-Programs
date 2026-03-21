@@ -149,6 +149,22 @@ class Ride{
     double getFare(){
         return fare;
     }
+
+    void displayRideDetails(){
+        System.out.println("------------------------------------");
+        System.out.println("Ride Details\n");
+        System.out.println("Ride ID : "+getRideId());
+        System.out.println("Distance : "+getDistance());
+        System.out.println("Fare : "+getFare());
+        System.out.println("------------------------------------");
+        System.out.println("Driver Details\n");
+        driver.display();
+        System.out.println("------------------------------------");
+        System.out.println("Passenger Details\n");
+        passenger.display();
+        System.out.println("------------------------------------");
+
+    }
 }
 
 public class RideSharingSystem {
