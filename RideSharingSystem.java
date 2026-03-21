@@ -137,6 +137,18 @@ class Ride{
         this.distance = distance;
         this.fare = driver.calculateFare(distance);
     }
+
+    int getRideId(){
+        return rideId;
+    }
+
+    double getDistance(){
+        return distance;
+    }
+
+    double getFare(){
+        return fare;
+    }
 }
 
 public class RideSharingSystem {
