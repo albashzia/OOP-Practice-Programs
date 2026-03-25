@@ -11,6 +11,21 @@ Test your classes from a main method.
 */
 class Movie{
 
+    private String rating;
+    private int idNumber;
+    private String title;
+
+    // Constructor
+    public Movie(String rating, int idNumber, String title) {
+        this.rating = rating;
+        this.idNumber = idNumber;
+        this.title = title;
+    }
+
+    // Default constructor
+    public Movie() {}
+
+
 }
 
 class Action extends Movie{
