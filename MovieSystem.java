@@ -63,6 +63,10 @@ class Movie{
         Movie other = (Movie) obj;
         return this.idNumber == other.idNumber;
     }
+
+    public double calcLateFees(int daysLate) {
+        return daysLate * 2.0;
+    }
 }
 
 class Action extends Movie{
