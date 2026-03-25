@@ -25,6 +25,19 @@ class Movie{
     // Default constructor
     public Movie() {}
 
+    // Getters
+    public String getRating() {
+        return rating;
+    }
+
+    public int getIdNumber() {
+        return idNumber;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
 
 }
 
