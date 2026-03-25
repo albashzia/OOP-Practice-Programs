@@ -51,6 +51,18 @@ class Movie{
         this.title = title;
     }
 
+    // equals() override
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+
+        if (obj == null || getClass() != obj.getClass())
+            return false;
+
+        Movie other = (Movie) obj;
+        return this.idNumber == other.idNumber;
+    }
 }
 
 class Action extends Movie{
