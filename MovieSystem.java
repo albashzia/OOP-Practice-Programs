@@ -38,6 +38,18 @@ class Movie{
         return title;
     }
 
+    // Setters
+    public void setRating(String rating) {
+        this.rating = rating;
+    }
+
+    public void setIdNumber(int idNumber) {
+        this.idNumber = idNumber;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
 }
 
