@@ -103,4 +103,26 @@ class Drama extends Movie{
 }
 
 public class MovieSystem {
+    public static void main(String[] args) {
+
+        Movie m1 = new Movie("PG", 101, "Generic Movie");
+        Action a1 = new Action("R", 102, "Fast Action");
+        Comedy c1 = new Comedy("PG-13", 103, "Funny Movie");
+        Drama d1 = new Drama("PG", 104, "Emotional Drama");
+
+        // Testing late fees
+        System.out.println("Movie Late Fee (3 days): $" + m1.calcLateFees(3));
+        System.out.println("Action Late Fee (3 days): $" + a1.calcLateFees(3));
+        System.out.println("Comedy Late Fee (3 days): $" + c1.calcLateFees(3));
+        System.out.println("Drama Late Fee (3 days): $" + d1.calcLateFees(3));
+
+        // Testing equals()
+        Movie m2 = new Movie("R", 101, "Another Movie");
+
+        if (m1.equals(m2)) {
+            System.out.println("m1 and m2 are equal (same ID)");
+        } else {
+            System.out.println("m1 and m2 are NOT equal");
+        }
+    }
 }
