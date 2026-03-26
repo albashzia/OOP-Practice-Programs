@@ -70,7 +70,14 @@ class Movie{
 }
 
 class Action extends Movie{
+    public Action(String rating, int idNumber, String title) {
+        super(rating, idNumber, title);
+    }
 
+    @Override
+    public double calcLateFees(int daysLate) {
+        return daysLate * 3.0;
+    }
 }
 
 class Comedy extends Movie{
