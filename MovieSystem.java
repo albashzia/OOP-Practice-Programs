@@ -92,7 +92,14 @@ class Comedy extends Movie{
 }
 
 class Drama extends Movie{
+    public Drama(String rating, int idNumber, String title) {
+        super(rating, idNumber, title);
+    }
 
+    @Override
+    public double calcLateFees(int daysLate) {
+        return daysLate * 2.0;
+    }
 }
 
 public class MovieSystem {
