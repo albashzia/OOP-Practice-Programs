@@ -1,1 +1,19 @@
-/out/
+# Java compiled files
+*.class
+
+# IntelliJ IDEA
+.idea/
+
+# Build folders
+out/
+build/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
