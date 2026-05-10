@@ -31,5 +31,24 @@ abstract class Animal{
         System.out.println("The animal is sleeping");
     }
 }
+
+
+class Mammal extends Animal{
+
+    String furColor;
+
+    public Mammal(String name, int age, String furColor){
+        super(name,age);
+        this.furColor = furColor;
+    }
+    public void run(){
+        System.out.println(this.name+" is running");
+    }
+    @Override
+    public void eat() {
+        System.out.println(this.name+" is eating.");
+    }
+}
+
 public class ZooManagementSystem {
 }
