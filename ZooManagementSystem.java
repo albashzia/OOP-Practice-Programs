@@ -17,6 +17,14 @@
  animal.
  Your task is to implement the classes according to the given requirements and demonstrate their
  usage in a separate Main class.***/
+abstract class Animal{
+    String name;
+    int age;
 
+    abstract public void eat();
+    public void sleep(){
+        System.out.println("The animal is sleeping");
+    }
+}
 public class ZooManagementSystem {
 }
