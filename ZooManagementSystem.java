@@ -21,6 +21,11 @@ abstract class Animal{
     String name;
     int age;
 
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
     abstract public void eat();
     public void sleep(){
         System.out.println("The animal is sleeping");
