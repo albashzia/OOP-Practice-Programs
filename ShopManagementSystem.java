@@ -13,6 +13,26 @@
   display total bill
   display the number of products and discounted products in the cart individually
  ***/
+class Product{
+    private String name;
+    private double price;
 
+    public Product(String name, double price){
+        this.name = name;
+        this.price = price;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+
+    public double getPrice(){
+        return this.price;
+    }
+
+    public void returnBill(){
+        System.out.println("Product: "+getName()+" | "+"Price: "+getPrice());
+    }
+}
 public class ShopManagementSystem {
 }
