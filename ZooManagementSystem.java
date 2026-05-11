@@ -50,5 +50,23 @@ class Mammal extends Animal{
     }
 }
 
+class Bird extends Animal{
+    double wingSpan;
+
+    public Bird(String name, int age,double wingSpan) {
+        super(name, age);
+        this.wingSpan = wingSpan;
+    }
+
+    public void fly(){
+        System.out.println(this.name+" is flying");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println(this.name+" is eating.");
+    }
+}
+
 public class ZooManagementSystem {
 }
