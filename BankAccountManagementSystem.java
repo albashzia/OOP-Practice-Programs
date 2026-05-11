@@ -60,5 +60,22 @@ class BusinessAccount extends AccountClass {
     }
 }
 
+class SavingAccount extends AccountClass {
+
+    public SavingAccount(int accountNo, int yearOfOpening, double balance) {
+        super(accountNo, yearOfOpening, balance);
+    }
+
+    @Override
+    public void applyInterest() {
+
+        double interest = getBalance() * 0.10;
+
+        setBalance(getBalance() + interest);
+
+        System.out.println("10% interest applied to Saving Account.");
+    }
+}
+
 public class BankAccountManagementSystem {
 }
