@@ -50,9 +50,68 @@ class DiscountedProduct extends Product{
 
     @Override
     public double returnPrice(){
-        return discount;
+        return getPrice() - discount;
     }
 
+}
+
+class CustomerCart {
+
+    private Product[] cart;
+    private int count;
+
+    public CustomerCart(int size) {
+        cart = new Product[size];
+        count = 0;
+    }
+
+    public void addProduct(Product p) {
+        if (count < cart.length) {
+            cart[count] = p;
+            count++;
+        } else {
+            System.out.println("Cart is full!");
+        }
+    }
+
+    public void displayTotalBill() {
+        double total = 0;
+
+        for (int i = 0; i < count; i++) {
+            total += cart[i].returnPrice();
+        }
+
+        System.out.println("Total Bill: " + total);
+    }
+
+    public void displayProductCounts() {
+        int normalProducts = 0;
+        int discountedProducts = 0;
+
+        for (int i = 0; i < count; i++) {
+
+            if (cart[i] instanceof DiscountedProduct) {
+                discountedProducts++;
+            } else {
+                normalProducts++;
+            }
+        }
+
+        System.out.println("Normal Products: " + normalProducts);
+        System.out.println("Discounted Products: " + discountedProducts);
+    }
+
+    public void displayCart() {
+
+        for (int i = 0; i < count; i++) {
+
+            System.out.println(
+                    cart[i].getName() +
+                            " -- Bill: " +
+                            cart[i].returnPrice()
+            );
+        }
+    }
 }
 public class ShopManagementSystem {
 }
