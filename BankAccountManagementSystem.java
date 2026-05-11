@@ -43,5 +43,22 @@ abstract class AccountClass {
     public abstract void applyInterest();
 }
 
+class BusinessAccount extends AccountClass {
+
+    public BusinessAccount(int accountNo,int yearOfOpening, double balance) {
+        super(accountNo, yearOfOpening, balance);
+    }
+
+    @Override
+    public void applyInterest() {
+
+        double interest = getBalance() * 0.15;
+
+        setBalance(getBalance() + interest);
+
+        System.out.println("15% interest applied to Business Account.");
+    }
+}
+
 public class BankAccountManagementSystem {
 }
