@@ -5,5 +5,43 @@
  provide funcƟonality for interest applicaƟon.
  You are required to design class diagram and implement the above scenario. ***/
 
+abstract class AccountClass {
+
+    private int accountNo;
+    private int yearOfOpening;
+    private double balance;
+
+    public AccountClass(int accountNo, int yearOfOpening, double balance) {
+        this.accountNo = accountNo;
+        this.yearOfOpening = yearOfOpening;
+        this.balance = balance;
+    }
+
+    public int getAccountNo() {
+        return accountNo;
+    }
+
+    public int getYearOfOpening() {
+        return yearOfOpening;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public void display() {
+
+        System.out.println("Account No: " + accountNo);
+        System.out.println("Year Of Opening: " + yearOfOpening);
+        System.out.println("Balance: " + balance);
+    }
+
+    public abstract void applyInterest();
+}
+
 public class BankAccountManagementSystem {
 }
