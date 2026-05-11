@@ -114,4 +114,25 @@ class CustomerCart {
     }
 }
 public class ShopManagementSystem {
+    public static void main(String[] args) {
+
+        CustomerCart cart = new CustomerCart(10);
+
+        Product p1 = new Product("Soap", 200);
+        Product p2 = new Product("Shampoo", 500);
+
+        DiscountedProduct d1 = new DiscountedProduct("Laptop", 100000, 5000);
+        DiscountedProduct d2 = new DiscountedProduct("Phone", 50000, 3000);
+
+        cart.addProduct(p1);
+        cart.addProduct(p2);
+        cart.addProduct(d1);
+        cart.addProduct(d2);
+
+        cart.displayCart();
+
+        cart.displayTotalBill();
+
+        cart.displayProductCounts();
+    }
 }
