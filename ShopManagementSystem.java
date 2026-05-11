@@ -30,8 +30,8 @@ class Product{
         return this.price;
     }
 
-    public void returnBill(){
-        System.out.println("Product: "+getName()+" | "+"Price: "+getPrice());
+    public double returnPrice(){
+        return price;
     }
 }
 
