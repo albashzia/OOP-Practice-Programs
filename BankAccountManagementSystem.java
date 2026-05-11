@@ -78,4 +78,26 @@ class SavingAccount extends AccountClass {
 }
 
 public class BankAccountManagementSystem {
+    public static void main(String[] args) {
+
+        BusinessAccount b1 = new BusinessAccount(101, 2020, 100000);
+
+        SavingAccount s1 = new SavingAccount(202, 2022, 50000);
+
+        System.out.println("Before Interest:");
+        b1.display();
+        System.out.println();
+
+        s1.display();
+
+        b1.applyInterest();
+        s1.applyInterest();
+
+        System.out.println("\nAfter Interest:");
+
+        b1.display();
+        System.out.println();
+
+        s1.display();
+    }
 }
