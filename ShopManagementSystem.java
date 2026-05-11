@@ -48,9 +48,9 @@ class DiscountedProduct extends Product{
         return this.discount;
     }
 
-    public void returnDiscountedBill(){
-        super.returnBill();
-        System.out.println("Discounted Bill: "+(getPrice()-getDiscount()));
+    @Override
+    public double returnPrice(){
+        return discount;
     }
 
 }
