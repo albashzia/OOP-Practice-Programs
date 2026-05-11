@@ -34,5 +34,25 @@ class Product{
         System.out.println("Product: "+getName()+" | "+"Price: "+getPrice());
     }
 }
+
+class DiscountedProduct extends Product{
+
+    double discount;
+
+    public DiscountedProduct(String name, double price,double discount) {
+        super(name, price);
+        this.discount=discount;
+    }
+
+    public double getDiscount(){
+        return this.discount;
+    }
+
+    public void returnDiscountedBill(){
+        super.returnBill();
+        System.out.println("Discounted Bill: "+(getPrice()-getDiscount()));
+    }
+
+}
 public class ShopManagementSystem {
 }
