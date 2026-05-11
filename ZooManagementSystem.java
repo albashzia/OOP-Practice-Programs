@@ -69,4 +69,14 @@ class Bird extends Animal{
 }
 
 public class ZooManagementSystem {
+    public static void main(String[] args){
+        Animal m1 = new Mammal("Elephant",20,"Grey");
+        Animal b1 = new Bird("Eagle",3,3.5);
+
+        m1.eat();
+        m1.sleep();
+
+        b1.eat();
+        b1.sleep();
+    }
 }
