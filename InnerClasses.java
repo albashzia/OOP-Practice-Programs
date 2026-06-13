@@ -9,6 +9,7 @@ class OuterClass{
 
 public class InnerClasses {
     public static void main(String[] args) {
-
+        OuterClass myOuterObject = new OuterClass();
+        OuterClass.InnerClass myInnerObject = myOuterObject. new InnerClass();
     }
 }
