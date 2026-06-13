@@ -21,5 +21,8 @@ public class BoundedGenericsPractice {
 
         Stats<Integer> integerStats = new Stats<>(intNums);
         Stats<Double> doubleStats = new Stats<>(doubleNums);
+
+        System.out.println(integerStats.sum());
+        System.out.println(doubleStats.sum());
     }
 }
