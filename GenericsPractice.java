@@ -4,4 +4,9 @@ public class GenericsPractice {
             System.out.println(item);
         }
     }
+
+    public static void main(String[] args) {
+        String[] words = {"Apple","Ball","Pen","Laptop"};
+        Integer[] numbers = {1,2,3,4,5,6,7,8};
+    }
 }
