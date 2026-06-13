@@ -15,4 +15,11 @@ class Stats<T extends Number>{
 }
 
 public class BoundedGenericsPractice {
+    public static void main(String[] args) {
+        Integer[] intNums = {1,4,5,6,8,2};
+        Double[] doubleNums = {2.4,5.7,3.6,9.1,6.3};
+
+        Stats<Integer> integerStats = new Stats<>(intNums);
+        Stats<Double> doubleStats = new Stats<>(doubleNums);
+    }
 }
