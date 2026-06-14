@@ -1,3 +1,5 @@
+import java.io.Serializable;
+
 class Student2{
     int id;
     String name;
@@ -15,4 +17,7 @@ class Student2{
 
 
 public class SerialisationPractice1 {
+    public static void main(String[] args) {
+
+    }
 }
