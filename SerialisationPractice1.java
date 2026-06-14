@@ -13,6 +13,11 @@ class Student2 implements Serializable{
         this.id = id;
         this.name = name;
     }
+
+    void display(){
+        System.out.println("Id: "+this.id);
+        System.out.println("Name: "+this.name);
+    }
 }
 
 
