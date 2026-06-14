@@ -29,5 +29,14 @@ public class SerialisationPractice1 {
         catch (Exception e) {
             System.out.println(e.getMessage());
         }
+
+        try {
+            ObjectInputStream ois = new ObjectInputStream(new FileInputStream("students.ser"));
+            Student2 s3 = (Student2) ois.readObject();
+            Student2 s4 = (Student2) ois.readObject();
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 }
