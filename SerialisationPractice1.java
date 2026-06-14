@@ -1,6 +1,7 @@
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-class Student2{
+class Student2 implements Serializable{
     int id;
     String name;
 
